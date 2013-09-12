@@ -1,0 +1,24 @@
+{
+  "name": "glass",
+  "version": "0.0.1",
+  "description": "",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "mocha": "1.12.0",
+    "chai": "1.7.2",
+    "supertest": "*"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "keywords": [
+    "ruby",
+    "rails",
+    "models",
+    "collections"
+  ],
+  "author": "Jaune Sarmiento",
+  "license": "MIT License"
+}
