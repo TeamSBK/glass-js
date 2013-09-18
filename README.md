@@ -1,7 +1,7 @@
 Glass.js
 ==
 
-# How it works
+__How it works__
 
 When your page loads, Glass.js attaches objects that represent your Rails models
 in the `window` object under the `glass` namespace. So when you have a `User`
@@ -20,8 +20,7 @@ The following usage examples makes use of the Glass API given that you have a
 
 ## Find
 
-Finds a list of records in a model with the passed parameters.
-
+Finds a list of records in a model with 'Foo' as name.
 
 ```javascript
 glass.User.find({
@@ -36,10 +35,6 @@ glass.User.find({
 
 ## Find All
 
-Returns all rows in a model.
-
-__Usage Example:__
-
 The following usage example finds all users.
 
 ```javascript
@@ -53,9 +48,8 @@ glass.User.find(function (res, error) {
 
 ## Create
 
-Create a new record.
+Create a new user record.
 
-__Usage:__
 ```javascript
 var user = {
   name: 'Jaune Sarmiento',
@@ -71,10 +65,8 @@ glass.User.create(user, function (res, error) {
 
 ## Update
 
-Update a record.
+Update the user with `id == 1` and update its name to `Joko`.
 
-
-__Usage:__
 ```javascript
 // Given our create() function returns the user object with 1 as id
 var user = {
@@ -92,7 +84,7 @@ glass.User.update(user, function (res, error) {
 
 ## Delete
 
-Delete a record.
+Delete a user record with `id == 1`.
 
 ```javascript
 glass.User.delete(1, function (res, error) {
