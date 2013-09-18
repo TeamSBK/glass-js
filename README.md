@@ -12,13 +12,16 @@ Glass.js exposes functions such as `find`, `findAll`, `create`, `update` and
 `delete` to handle XMLHTTPRequests to your backend, simplifying your CRUD API
 calls.
 
+
+# Usage Examples
+
+The following usage examples makes use of the Glass API given that you have a
+`User` model in your Rails app and you have configured the Glass gem to expose it.
+
 ## Find
 
 Finds a list of records in a model with the passed parameters.
 
-__Usage Example:__
-
-The following usage example finds all users with the name "Foo".
 
 ```javascript
 glass.User.find({
@@ -40,7 +43,7 @@ __Usage Example:__
 The following usage example finds all users.
 
 ```javascript
-glass.Users.find(function (res, error) {
+glass.User.find(function (res, error) {
   if (!error) {
     // Do something with res
   }
@@ -59,7 +62,7 @@ var user = {
   email: 'hello@jaunesarmiento.me'
 };
 
-glass.Users.create(user, function (res, error) {
+glass.User.create(user, function (res, error) {
   if (!error) {
     // Do something with res
   }
@@ -79,7 +82,7 @@ var user = {
   name: 'Joko'
 };
 
-glass.Users.update(user, function (res, error) {
+glass.User.update(user, function (res, error) {
   if (!error) {
     // Do something with res
   }
