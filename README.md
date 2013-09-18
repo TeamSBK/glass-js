@@ -13,6 +13,12 @@ Glass.js exposes functions such as `find`, `findAll`, `create`, `update` and
 calls.
 
 
+
+# Installation
+Please read [Glass](https://github.com/TeamSBK/glass) to learn more about the
+setup instructions and usage of the gem that uses this JavaScript library.
+
+
 # Usage Examples
 
 The following usage examples makes use of the Glass API given that you have a
@@ -94,8 +100,5 @@ glass.User.delete(1, function (res, error) {
 });
 ```
 
-
-Please read [Glass](https://github.com/TeamSBK/glass) to learn more about the
-setup instructions and usage of the gem.
 
 
